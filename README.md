@@ -14,3 +14,7 @@ Tecnologias usadas:
 - JavaScript
 - Bootstrap 5
 
+Referências e dicas de comandos:
+- Wikipedia: https://pt.wikipedia.org/wiki/Copa_Libertadores_da_Am%C3%A9rica#
+- Gemini: Aprendizado Guiado
+- W3schools
