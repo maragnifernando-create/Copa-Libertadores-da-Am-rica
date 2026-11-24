@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histórico Comenbol Libertadores da América</title>
+    <title>Histórico CONMEBOL Libertadores da América</title>
 
 <!--Css Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <!--Assecibilidade-->
+    <!--Acessibilidade-->
     <div class="bg-dark text-white py-2 px-3 d-flex justify-content-end gap-2">
         <button id="btn-tema" class="btn btn-sm btn-outline-warning "> Modo Escuro</button>
         <button id="btn-aumentar" class="btn btn-sm btn-outline-light">Aumentar Letra</button>
@@ -23,199 +23,561 @@
     <header class="py-4 text-center">
         <h1>Copa Libertadores da América</h1>
         <p>Histórias, Campeões e Estatísticas</p>
-        <img src="Imagens/conmebol-libertadores4840.jpg" alt="Logotipo Commenbol Libertadores" class="img-fluid my-3 logo-libertadores">
+        <img src="Imagens/conmebol-libertadores4840.jpg" alt="Logotipo CONMEBOL Libertadores" class="img-fluid my-3 logo-libertadores">
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top border-bottom border-warning">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-arning" href="#">Libertadores</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="menuNavegacao">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carrosel">Momentos memoráveis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#campeoes">Campeões</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estatisticas">Estatísticas</a></li>
+                    <li class="nav-item"><a class="btn btn-warning btn-sm ms-lg-2 fw-bold" href="login.html">Página de login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
 <main class="container my-4">
 
-    <section card p-4 mb-4>
-    <h2 class="fw-bold">Sobre a Copa Libertadores da América</h2>
+    <section class="p-4 mb-4">
+    <h2 class="fw-bold titulo-seccao">Sobre a Copa Libertadores da América</h2>
     <p>
-        A <strong>Copa Libertadores da América</strong> ou também chamada de <strong>Taça Libertadores da América</strong>
-    é uma competição continental para os clubes de futebol da América do Sul, organizada pela Conmebol.
-    Teve sua primeira edição em 1960, e tem seu nome em homenagem aos lideres da independencia das nações da América do Sul:
+        A <strong>Copa Libertadores da América</strong>, também chamada de <strong>Taça Libertadores da América</strong>,
+    é uma competição continental para os clubes de futebol da América do Sul, organizada pela CONMEBOL.
+    Teve sua primeira edição em 1960 e recebeu esse nome em homenagem aos líderes da independência das nações da América do Sul:
     José Artigas, Simón Bolívar, José de San Martín, José Bonifácio de Andrada e Silva, D. Pedro I do Brasil, Antonio José de Sucre 
     e Bernardo O'Higgins.
     </p>
     <p>
-        Durante a sua história ela teve vários tipos de formatos de disputa. Ela primeiramente só contava com os campeões 
-      nacionais de cada país, e por conta disso, Copa dos Campeões da Amériaca e so recebeu o nome Copa
-      Libertadores da América em 1965. A partir de 1966, a competição passou a contar com os vice-campeões nacionais
-      sul-americanos. Em 1998, os clubes do Mexico foram convidados para participar, isso durou até 2017,
-      já que a Comenbol instituiu uma reforma no torneio que tirou o interesse dos clubes mexicanos em participar.   
+        Durante a sua história, ela teve vários formatos de disputa. Primeiramente, só contava com os campeões 
+      nacionais de cada país e, por conta disso, chamava-se Copa dos Campeões da América, recebendo o nome Copa
+      Libertadores da América apenas em 1965. A partir de 1966, a competição passou a contar com os vice-campeões nacionais
+      sul-americanos. Em 1998, os clubes do México foram convidados para participar, o que durou até 2017,
+      quando a CONMEBOL instituiu uma reforma no torneio que tirou o interesse dos clubes mexicanos em participar.   
     </p>
     <p>
-        Nos dias de hoje a mairia dos países da América do Sul possuem 4 vagas para parcipar, já o Brasil e a Argentina
-        tem entre 6 e 7 clubes representantes. A competição sempre foi dividida em fases de grupos mas com o aumento da
-        quantidade de clubes participantes, as fases eliminatórias foram sendo feitas de maneriras diferentes.
-        No formato atual, a competição conta com 32 clubes divididos em 8 grupos de 4 clubes cada,
-        para dividir os clubes em grupos, a Comenbol utiliza das tabelas das ligas nacionais e copas de cada país,
-        além do campeão da edição anterior da Libertadores e da Copa Sul-Americana, assim totalizando 26 clubes passando
-        em vagas diretas e outros 6 clubes disputando as 6 vagas restantes em uma fase preliminar.
+        Nos dias de hoje, a maioria dos países da América do Sul possui 4 vagas para participar, já o Brasil e a Argentina
+        têm entre 6 e 7 clubes representantes. A competição sempre foi dividida em fases de grupos, mas, com o aumento da
+        quantidade de clubes participantes, as fases eliminatórias foram sendo disputadas de maneiras diferentes.
+        No formato atual, a competição conta com 32 clubes divididos em 8 grupos de 4 clubes cada.
+        Para distribuir os clubes nos grupos, a CONMEBOL utiliza o desempenho nas ligas nacionais e copas de cada país,
+        além do campeão da edição anterior da Libertadores e da Copa Sul-Americana, totalizando 28 clubes entrando
+        em vagas diretas e outros 19 clubes disputando as 4 vagas restantes em fases preliminares.
     </p>
     <p>
-        Assim reunidos os 32 clubes, eles jogam 6 partidas, 3 em casa e 3 fora, e os dois melhores de cada grupo avançam para
-        as oitavas de final, a partir das delas, a competição passa a ser disputada em mata-mata, com jogos de ida e volta, 
-        até chegar na grande final que é disputada em jogo único em local pré-definido.
+        Assim reunidos os 32 clubes, eles jogam 6 partidas (3 em casa e 3 fora), e os dois melhores de cada grupo avançam para
+        as oitavas de final. A partir delas, a competição passa a ser disputada em mata-mata, com jogos de ida e volta, 
+        até chegar à grande final, que é disputada em jogo único em local pré-definido.
     </p>
     </section>
-    </main>
+    
 
-    <h2 class="card fw-bold">História da Copa Libertadores da América</h2>
+    <h2 id="historia" class="fw-bold titulo-seccao mt-5">História da Copa Libertadores da América</h2>
 
-    <h3 class="card fw-bold">Origem e Criação</h3>
+<section class="card p-4 mb-4">
+    
+    <h3 class="fw-bold titulo-seccao">Origem e Criação</h3>
     <p>
         A ideia de criar uma competição continental para os clubes da América do Sul surgiu por conta dos
         confrontos que já aconteciam entre os campeões nacionais da Argentina e do Uruguai, na Copa Rio de La Plata.
-        Antes de oficializar a Libertadores, ocorreu em 1948 o Campeonato Sul-Americano de Campeões, que foi o precusor
-        da competição, que foi disputada no Chile, já que foi organizado pelo clube chileno Colo-Colo, foi vencida pelo
-        Vasco da Gama do Brasil. Após isso, o Presidente da Conmbol da época, o brasileiro José Ramos de Freitas, 
-        propôs a criação de um campeonato sul-americano de clubes com o formato semelhante ao já existente da Europa.
+        Antes de oficializar a Libertadores, ocorreu em 1948 o Campeonato Sul-Americano de Campeões, que foi o precursor
+        da competição. Disputado no Chile, já que foi organizado pelo clube chileno Colo-Colo, foi vencido pelo
+        Vasco da Gama, do Brasil. Após isso, o presidente da CONMEBOL da época, o brasileiro José Ramos de Freitas, 
+        propôs a criação de um campeonato sul-americano de clubes com formato semelhante ao já existente na Europa.
     </p>
     <p>
-        Então em 8 de outubro de 1958, durante uma reunião da UEFA, João Havelange, que era o presidente da CBD 
-        (Confederação Brasileira de Desportos) e também membro da Conmebol, anunciou a criação da Copa dos Campeões 
+        Então, em 8 de outubro de 1958, durante uma reunião da UEFA, João Havelange, que era o presidente da CBD 
+        (Confederação Brasileira de Desportos) e também membro da CONMEBOL, anunciou a criação da Copa dos Campeões 
         da América, que em 1965 foi rebatizada para Copa Libertadores da América.
     </p>
+</section >
 
-    <h3 class="card fw-bold">Primeiras Edições</h3>
+<section class="card p-4 mb-4">
+    <h3 class="fw-bold titulo-seccao">Primeiras Edições</h3>
     <p>
         Em 1960 ocorreu a primeira edição da competição, que contou com 7 clubes, entre eles Bahia,
         Peñarol, Jorge Wilstermann, Olimpia, Universidad de Chile, Universitario e San Lorenzo. O campeão 
-        da primeira edição foi Penãrol do Uruguai, derrotando o Olimpia na final. E na edição seguinte em 
-        1961 venceram também.
+        da primeira edição foi o Peñarol, do Uruguai, derrotando o Olimpia na final. E na edição seguinte, em 
+        1961, venceu novamente.
     </p>
     <p>
-        Mas o campeonato só conseguiu uma grande atenção quando o Santos, de Pelé, venceram em 1962
-        derrotando o bicampeão Penãrol na final.
-        Na edição seguinte repitiram o grande feito e derrotaram o Boca Juniors da Argentina com 
+        Mas o campeonato só conquistou grande atenção quando o Santos, de Pelé, venceu em 1962,
+        derrotando o bicampeão Peñarol na final.
+        Na edição seguinte, repetiu o grande feito e derrotou o Boca Juniors, da Argentina, 
         no Maracanã, no Rio de Janeiro, e na Bombonera, em Buenos Aires.
     </p>
     <p>
-        Depois disso, o Indepndiente da Argentina, o Penârol novamente, o Racing da Argentina ganharam as
-        edições de 1964, 1965, 1966 e 1967 respectivamente, já que o Independente ganhou duas vezes seguidas.
-        E um clube que deixou sua marca foi o Estudiantes de La Plata, da argentina, que ganhou 3 vezes seguidas
-        em 68, 69 e 70.
+        Depois disso, o Independiente da Argentina, o Peñarol novamente e o Racing da Argentina ganharam as
+        edições de 1964, 1965, 1966 e 1967, respectivamente, já que o Independiente venceu duas vezes seguidas.
+        Outro clube que deixou sua marca foi o Estudiantes de La Plata, da Argentina, que ganhou 3 vezes seguidas:
+        em 1968, 1969 e 1970.
     </p>
-    <h3 class="card fw-bold">Domínio do futebol Argentino</h3>
+</section>
+
+
+<section class="card p-4 mb-4">
+    <h3 class="fw-bold titulo-seccao">Domínio do Futebol Argentino</h3>
     <p>
         Durante a década de 1970, os clubes argentinos dominaram a competição, perdendo apenas em 3 temporadas.
-        O Independiente formou um time incrivel que conquistou as Libertadores de 1972 a 1975. Em 1976 foram 
-        derrotados pelo River Plate, mas quem se consagrou campeão foi o Cruzeiro, segundo brasileiro desde Pelé
+        O Independiente formou um time incrível que conquistou as Libertadores de 1972 a 1975. Em 1976, foi 
+        derrotado pelo River Plate, mas quem se consagrou campeão foi o Cruzeiro, segundo brasileiro desde o Santos de Pelé
         a conquistar o título.
     </p>
     <p>
-        O Boca Juniors então ganharia duas vezes seguidas, em 77 e 78 , e quase seriam três se não fosse o Olimpia do Paraguai
-        que ganharia pela primeira vez, em que venceu o jogo de ida por 2 a 0 e fora de casa superaram o placar em 0 a 0 no 
+        O Boca Juniors então ganharia duas vezes seguidas, em 1977 e 1978, e quase seriam três, se não fosse o Olimpia, do Paraguai,
+        que venceria pela primeira vez ao ganhar o jogo de ida por 2 a 0 e segurar o empate em 0 a 0 fora de casa, no 
         Estádio La Bombonera.
-        A partir de 1980 a dominancia acabaria e teriam varios novos campeõs e os ultimas campanhas de clubes do Uruguai.
+        A partir de 1980, essa dominância acabaria e surgiriam vários novos campeões, além das últimas conquistas de clubes do Uruguai.
     </p>
-    <h3 class="card fw-bold">Novos campeões contineitais</h3>
+</section>
+
+<section class="card p-4 mb-4">
+    <h3 class="fw-bold titulo-seccao">Novos Campeões Continentais</h3>
     <p>
-        Nove anos depois do seu primeiro troféu, o Nacional venceu sua segunda Libertadores em 1980 depois de vencer o Internacional 
-        do Brasil.  Apesar do forte status que o futebol brasileiro tinha, em 1981 o país levou apenas o seu quarto título com o Flamengo, 
+        Nove anos depois do seu primeiro troféu, o Nacional venceu sua segunda Libertadores em 1980, depois de derrotar o Internacional, 
+        do Brasil. Apesar do forte prestígio que o futebol brasileiro tinha, em 1981 o país levou apenas o seu quarto título com o Flamengo, 
         liderado por Zico.
-        Depois de 16 anos, o Peñarol voltaria a ganhar a competição em 1982 depois de vencer o vice-campeão do ano anterior, Cobreloa, além de 
-        vencerem o atual campeão Flamengo na segunda fase da edição. Em 1983 o Grêmio do Brasil derrotou o Penãrol na final
-        trazendo mais um título para o Brasil.
+        Depois de 16 anos, o Peñarol voltaria a ganhar a competição em 1982, após vencer o vice-campeão do ano anterior, Cobreloa, além de 
+        eliminar o atual campeão Flamengo na segunda fase da edição. Em 1983, o Grêmio, do Brasil, derrotou o Peñarol na final,
+        trazendo mais um título para o país.
     </p>
     <p>
-        O Independiente voltou a vencer em 1984, ganhando o seu sétimo e último título, estabelecendo o recorde de maior campeão do torneio até hoje, 
-        depois de vencer o então campeão Grêmio em uma final que incluiu uma vitória por 1 a 0 em pleno Estádio Olímpico Monumental, casa do Tricolor Gaúcho, 
+        O Independiente voltou a vencer em 1984, conquistando o seu sétimo e último título e estabelecendo o recorde de maior campeão do torneio até hoje, 
+        depois de bater o então campeão Grêmio em uma final que incluiu uma vitória por 1 a 0 em pleno Estádio Olímpico Monumental, casa do Tricolor Gaúcho, 
         na primeira partida.
-        O  América de Cali da Colômbia chegou a três finais consecutivas em 1985, 1986 e 1987, mas, assim como o Cobreloa, o América não conseguiu ganhar o 
-        torneio nenhuma vez. Em 1985, o time do Argentinos Juniors, um pequeno clube do bairro de La Paternal da cidade de Buenos Aires, surpreendeu a América do 
-        Sul, eliminando os campeões Independiente em pleno Estádio La Doble Visera por 2 a 1 durante o último jogo decisivo da segunda rodada, garantindo-se na final. 
-        O Argentinos Juniors ganharam seu único título na competição ao derrotar o America de Cali na terceira partida logo após uma disputa de pênaltis.
-        Depois de perder 2 títulos o River Plate finalmente conquistou uma taça em 1986, logo depois o Penãrol venceria em 87 e o Nacional pela ultima vez em 88
-        consagrando esses os ultimos títulos conquistados pelos Uruguaios.
+        O América de Cali, da Colômbia, chegou a três finais consecutivas em 1985, 1986 e 1987, mas, assim como o Cobreloa, não conseguiu ganhar o 
+        torneio nenhuma vez. Em 1985, o time do Argentinos Juniors, um pequeno clube do bairro de La Paternal, da cidade de Buenos Aires, surpreendeu a América do 
+        Sul ao eliminar o campeão Independiente em pleno Estádio La Doble Visera por 2 a 1 no último jogo decisivo da segunda fase, garantindo-se na final. 
+        O Argentinos Juniors ganhou seu único título na competição ao derrotar o América de Cali na terceira partida, após uma disputa de pênaltis.
+        Depois de perder 2 títulos, o River Plate finalmente conquistou uma taça em 1986; logo depois, o Peñarol venceria em 1987 e o Nacional pela última vez em 1988,
+        consagrando esses como os últimos títulos conquistados pelos uruguaios.
     </p>
     <p>
-        E por fim em 89 uma equipe da costa do Pacífico viria a conquistar o torneio, quebrando o domínio estabelecido pelas potências dos países do Oceano Atlântico.
+        Por fim, em 1989, uma equipe da costa do Pacífico viria a conquistar o torneio, quebrando o domínio estabelecido pelas potências dos países do Oceano Atlântico.
         O Atlético Nacional de Medellín venceu a última edição da Libertadores da década de 1980, tornando-se a primeira equipe da Colômbia a vencer o torneio.
     </p>
-    <h3 class="card fw-bold">Década de 90</h3>
+</section>
+
+
+<section class="card p-4 mb-4">
+    <h3 class="fw-bold titulo-seccao">Década de 90</h3>
     <p>
-        O Olimpia chegou à final da Copa Libertadores de 1990 depois de derrotar o detentor do título em uma semifinal dramática que só foi decidida nos pênaltis. 
-        Nas finais, o Olimpia derrotou o Barcelona de Guayaquil do Equador por 3 a 1 no agregado ganhando seu segundo título. O mesmo Olimpia chegou às finais da 
-        Libertadores de 1991 mais uma vez, derrotando o Atlético Nacional nas semifinais e enfrentando o Colo-Colo do Chile na decisão. Dirigido pelo treinador jugoslavo 
-        Mirko Jozić, o time chileno bateu os paraguaios na segunda partida da final por 3 a 0. A derrota trouxe a segunda era dourada do Olimpia ao fim.
+        O Olimpia chegou à final da Copa Libertadores de 1990 depois de derrotar o detentor do título em uma semifinal dramática, decidida apenas nos pênaltis. 
+        Nas finais, o Olimpia derrotou o Barcelona de Guayaquil, do Equador, por 3 a 1 no agregado, ganhando seu segundo título. O mesmo Olimpia chegou às finais da 
+        Libertadores de 1991 mais uma vez, derrotando o Atlético Nacional nas semifinais e enfrentando o Colo-Colo, do Chile, na decisão. Dirigido pelo treinador iugoslavo 
+        Mirko Jozić, o time chileno bateu os paraguaios na segunda partida da final por 3 a 0. A derrota marcou o fim da segunda era dourada do Olimpia.
     </p>
     <p>
-        Em 1992, o São Paulo, treinado por Telê Santana e com jogadores como Zetti, Müller, Raí, Cafu e Palhinha, venceu o Newell's Old Boys da Argentina.
-        Em 1993, o clube manteve o título ao vencer a Universidad Católica do Chile nas finais. Foi o primeiro clube a vencer duas edições consecutivas desde o Boca Juniors,
-        em 1978. Assim como o Boca Juniors, o São Paulo chegou mais uma vez à final em 1994 e perdeu o título para o Vélez Sarsfield da Argentina na disputa por pênaltis.
+        Em 1992, o São Paulo, treinado por Telê Santana e com jogadores como Zetti, Müller, Raí, Cafu e Palhinha, venceu o Newell's Old Boys, da Argentina.
+        Em 1993, o clube manteve o título ao vencer a Universidad Católica, do Chile, nas finais. Foi o primeiro clube a vencer duas edições consecutivas desde o Boca Juniors,
+        em 1978. Assim como o Boca Juniors, o São Paulo chegou mais uma vez à final em 1994, mas perdeu o título para o Vélez Sarsfield, da Argentina, na disputa por pênaltis.
     </p>
+    <p>
+       Com uma formação tática altamente compacta e os gols da dupla Jardel e Paulo Nunes, o Grêmio ganhou o cobiçado troféu novamente em 1995, depois de vencer o Atlético Nacional, 
+       treinado por Luiz Felipe Scolari, também conhecido como Felipão.
+       Já em 1996, o River Plate garantiu o seu segundo título após derrotar o América de Cali em uma revanche da final de 1986.
+       A Copa Libertadores permaneceu em grande parte do fim dos anos 90 em terras brasileiras, quando Cruzeiro, Vasco da Gama e Palmeiras venceram o torneio:
+       o Cruzeiro em 1997, ganhando do time peruano Sporting Cristal; o Vasco da Gama derrotou o Barcelona do Equador em 1998; e o Palmeiras venceu o título de 1999
+       em dois jogos dramáticos na final: 1 a 0 para o Deportivo Cali na ida e 2 a 1 para o Palmeiras na volta, levando a decisão para as penalidades máximas, vencidas pelo
+       Palmeiras, dando também o segundo título de Libertadores para Felipão.
+    </p>
+    <p>
+       Este período mostrou ser um grande ponto de virada na história da competição, já que a Copa Libertadores passou por um grande crescimento e transformação. Há muito tempo dominada
+       por equipes da Argentina, a competição viu o Brasil começar a ofuscar seus vizinhos, já que seus clubes alcançaram sete finais e ganharam seis títulos na década de 1990.
+       A partir de 1998, a Copa Libertadores começou a ser patrocinada pela montadora japonesa Toyota e foi batizada oficialmente como Copa Toyota Libertadores. Nesse mesmo ano, os clubes 
+       mexicanos, embora afiliados à CONCACAF, começaram a participar da competição graças às vagas obtidas ao disputarem inicialmente a chamada Pré-Libertadores, onde dois times mexicanos 
+       enfrentavam dois clubes venezuelanos, num grupo de turno e returno no qual os dois primeiros colocados garantiam vaga na fase de grupos. O torneio posteriormente foi expandido para 32 equipes 
+       e incentivos econômicos foram introduzidos por um acordo entre a CONMEBOL e a patrocinadora Toyota. Todas as equipes que avançaram para a segunda etapa do torneio receberam 25 mil dólares 
+       por sua participação.
+    </p>
+</section>
+
+<section class="card p-4 mb-4">
+    <h3 class="fw-bold titulo-seccao">De 2000 a 2009</h3>
+    <p>
+        Durante a Copa Libertadores da América de 2000, o Boca Juniors voltou ao topo do continente e ergueu a taça novamente após 22 anos, estabelecendo-se como
+        um dos melhores times do mundo graças ao seu técnico, Carlos Bianchi, e ao seu elenco com grandes jogadores.
+        O time do Boca ganhou a edição de 2001 ao derrotar, mais uma vez, o Palmeiras nas semifinais e o mexicano Cruz Azul na final, que havia se tornado o primeiro clube mexicano 
+        a atingir a decisão após grandes atuações contra River Plate e um inspirado Rosario Central.
+        Em 2002, o Olimpia ganharia o seu terceiro título em cima da surpresa da competição, o São Caetano, mesmo saindo perdendo no jogo de ida.
+    </p>
+    <p>
+        Em 2003, ocorreu uma das edições mais excepcionais da história da Libertadores, já que muitas equipes, como América de Cali, River Plate, Grêmio, Cobreloa e Racing, entre outras, 
+        apresentaram grandes times, além de grandes surpresas inesperadas como Independiente Medellín e Paysandu, e o time jovem do Santos apresentando um 
+        futebol divertido e alegre que se assemelhava à geração de Pelé dos anos 60.
+        Então, o Boca Juniors e o Santos acabariam se encontrando na final, fazendo uma revanche da edição de 1963 vencida pelos santistas. O Boca acabou vingando a derrota dos anos 60, 
+        superando o Santos nas duas partidas da final: 2 a 0 na Bombonera e 3 a 1 no Morumbi, tornando-se pentacampeão.
+        O time argentino chegaria à sua quarta final em cinco torneios no ano de 2004, mas foi superado pelo surpreendente Once Caldas, da Colômbia, que, empregando um estilo de futebol conservador 
+        e defensivo, tornou-se o segundo clube colombiano a vencer a competição, depois do Atlético Nacional em 1989.
+    </p>
+    <p>
+        Em 2005, o São Paulo venceria seu terceiro título derrotando o Athletico Paranaense, sendo a primeira vez que a final da Libertadores envolveu dois times de um mesmo país, 
+        fato que se repetiu em 2006, quando o Internacional venceu o então campeão São Paulo.
+        O grande rival do Internacional, o Grêmio, deu o melhor de si e chegou à final de 2007 com um esquadrão relativamente jovem. No entanto, enfrentou o Boca Juniors, que contava com muitos 
+        jogadores experientes e acabou levando seu sexto título.
+    </p>
+    <p>
+        Em 2008, a CONMEBOL conseguiu um novo patrocinador para o torneio: o Grupo Santander. A empresa espanhola, um dos maiores grupos bancários do mundo, substituiu a fabricante automotiva 
+        japonesa Toyota como a principal patrocinadora da competição, adquirindo os naming rights e tornando-se a patrocinadora máster da Copa Libertadores durante cinco anos, 
+        período em que o nome oficial mudou para Copa Santander Libertadores.
+        Durante essa temporada, a LDU Quito tornou-se o primeiro time do Equador a vencer a Copa Libertadores, depois de derrotar o Fluminense por 3 a 1 nas penalidades; em 2009, na 50ª edição da Libertadores,
+        o Estudiantes venceria o Cruzeiro em Belo Horizonte.
+    </p>
+</section>
+
+
+<section class="card p-4 mb-4">
+    <h3 class="fw-bold titulo-seccao">De 2010 a 2019</h3>
+    <p>
+        A partir de 2010, a competição passou a ser dominada pelos clubes brasileiros por quatro anos: primeiramente com o Internacional, que conquistou o bicampeonato ao derrotar o Chivas Guadalajara, do México, na final;
+        em 2011, o Santos voltaria a ganhar o título em cima do Peñarol, com a grande promessa do clube, Neymar Jr.
+        Em 2012, o Corinthians venceu o torneio de forma invicta, derrotando o Boca Juniors por 2 a 0 na final, e em 2013 o Atlético Mineiro venceu o Olimpia nos pênaltis.
+        O domínio brasileiro acabaria em 2014 com a vitória do San Lorenzo, da Argentina, que derrotou o Nacional, do Paraguai, na final, e o River Plate ganharia novamente em 2015.
+        Os títulos argentinos seriam interrompidos pelo Atlético Nacional em 2016, que venceria o Independiente del Valle, do Equador.
+    </p>
+    <p>
+        Em 2017, o Grêmio voltaria a colocar o Brasil no topo da Libertadores, ganhando o torneio pela terceira vez em sua história após derrotar o Lanús, da Argentina, na final.
+        Em 2018, o River Plate ganharia a competição pela quarta vez em uma final histórica contra o seu rival Boca Juniors, que teve seu jogo de volta realizado no Estádio Santiago Bernabéu, 
+        em Madri, na Espanha. Essa foi a primeira vez que o superclássico do futebol argentino decidiu uma final internacional (sendo a terceira final na história da competição com dois
+        times de um mesmo país, após 2005 e 2006) e também a primeira vez que o torneio foi decidido fora da América do Sul, após a partida de volta ter sido transferida de Buenos Aires por questões
+        de segurança.
+    </p>
+    <p>
+        A partir de 2019, a final da Copa Libertadores da América passou a ser decidida em jogo único, em campo previamente definido. O River Plate alcançou novamente a final, dessa vez 
+        contra o Flamengo. O clube brasileiro venceu de virada por 2 a 1 e conquistou seu segundo título na história, consolidando brasileiros e argentinos como os maiores vencedores da década.
+    </p>
+</section>
+
+<section class="card p-4 mb-4">
+    <h3 class="fw-bold titulo-seccao">Dominância dos Clubes Brasileiros (de 2020 até hoje)</h3>
+    <p>
+        A edição de 2020 foi adiada por conta da pandemia de COVID-19 e teve a sua final realizada no dia 30 de janeiro de 2021; o Palmeiras venceu o Santos no Maracanã, ganhando o título após 21 anos.
+        Na edição seguinte, que ocorreu inteiramente em 2021, o Palmeiras ganharia outra vez, vencendo o Flamengo no Estádio Centenario, em Montevidéu, e tornando-se tricampeão.
+        Em 2022, ocorreu outra final entre clubes brasileiros, entre Flamengo e Athletico Paranaense, com vitória da equipe carioca em Guayaquil, no Equador, fazendo o Flamengo se tornar tricampeão.
+    </p>
+    <p>
+        Já em 2023, o Boca Juniors quebrou a sequência de finais brasileiras, mas perdeu o título para o Fluminense no Maracanã.
+        Em 2024, a final voltou a ser brasileira, com Atlético Mineiro e Botafogo. O alvinegro carioca conquistou o título de forma inédita, marcando dois campeões inéditos consecutivos na competição.
+        Na edição de 2025, outra vez Palmeiras e Flamengo se encontraram na final, mas dessa vez o Flamengo venceu, tornando-se o primeiro clube brasileiro tetracampeão da Libertadores.
+    </p>
+
+</section>
+
+
+<section id="carrosel" class="card p-4 mb-4">
+    <h2 class="fw-bold titulo-secao">Momentos memoráveis</h2>
+
+    <div id="carrosselMomentos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="Imagens/cb96e74975eb641a980453c57e19d062c75fc382.jpg" class="d-block w-100" alt="Jogadores do Palmeiras comemorando o título da Libertadores 2021">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                    <h5>Título Libertadores 2021</h5>
+                    <p>Vitória de 2 a 1 do Palmeiras sobre o Flamengo</p>
+                </div>
+            </div>
+
+   
+            <div class="carousel-item">
+                <img src="Imagens/D6RFR62RSFMRPDIXJN74B5JSME.jpg" class="d-block w-100" alt="Jogadores do Grêmio erguendo a taça da Libertadores 2017">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                    <h5>Título Libertadores 2017</h5>
+                    <p>Vitória de 3 a 1 do Grêmio sobre o Lanús</p>
+                </div>
+            </div>
+
+         
+            <div class="carousel-item">
+                <img src="Imagens/DuAkKEpXQAA9If8.jpg" class="d-block w-100" alt="Jogadores do River Plate comemorando o título da Libertadores 2018">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                    <h5>Título Libertadores 2018</h5>
+                    <p>Conquista histórica do River Plate</p>
+                </div>
+            </div>
+
+            
+            <div class="carousel-item">
+                <img src="Imagens/i.jpeg" class="d-block w-100" alt="Jogadores do Flamengo comemorando o título da Libertadores 2019">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                    <h5>Título Libertadores 2019</h5>
+                    <p>Vitória de 2 a 1 do Flamengo sobre o River Plate</p>
+                </div>
+            </div>
+
+           
+            <div class="carousel-item">
+                <img src="Imagens/images.jpeg" class="d-block w-100" alt="Jogadores do Fluminense comemorando o título da Libertadores 2023">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                    <h5>Título Libertadores 2023</h5>
+                    <p>Vitória de 2 a 1 do Fluminense sobre o Boca Juniors</p>
+                </div>
+            </div>
+
+        </div> 
+
+     
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselMomentos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselMomentos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div> 
+</section>
+
+
+
+<section id="campeoes" class="card p-4 mb-4">
+    <h2 class="fw-bold titulo-seccao">Tabela dos Campeões</h2>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nome do Clube</th>
+                    <th>País do clube</th>
+                    <th>Quantidade de títulos</th>
+                    <th>Edições em que foram campeões</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Independiente</td>
+                    <td>Argentina</td>
+                    <td>7 títulos</td>
+                    <td>1964, 1965, 1972, 1973, 1974, 1975 e 1984</td>
+                </tr>
+                 <tr>
+                    <td>Boca Juniors</td>
+                    <td>Argentina</td>
+                    <td>6 títulos</td>
+                    <td>1977, 1978, 2000, 2001, 2003 e 2007</td>
+                </tr>
+                <tr>
+                    <td>Peñarol</td>
+                    <td>Uruguai</td>
+                    <td>5 títulos</td>
+                    <td>1960, 1961, 1966, 1982 e 1987</td>
+                </tr>
+                <tr>
+                    <td>River Plate</td>
+                    <td>Argentina</td>
+                    <td>4 títulos</td>
+                    <td>1986, 1996, 2015 e 2018</td>
+                </tr>
+                <tr>
+                    <td>Estudiantes</td>
+                    <td>Argentina</td>
+                    <td>4 títulos</td>
+                    <td>1968, 1969, 1970 e 2009</td>
+                </tr>
+                <tr>
+                    <td>Flamengo</td>
+                    <td>Brasil</td>
+                    <td>4 títulos</td>
+                    <td>1981, 2019, 2022 e 2025</td>
+                </tr>
+                <tr>
+                    <td>Olimpia</td>
+                    <td>Paraguai</td>
+                    <td>3 títulos</td>
+                    <td>1979, 1990 e 2002</td>
+                </tr>
+                <tr>
+                    <td>Palmeiras</td>
+                    <td>Brasil</td>
+                    <td>3 títulos</td>
+                    <td>1999, 2020 e 2021</td>
+                </tr>
+                <tr>
+                    <td>Nacional</td>
+                    <td>Uruguai</td>
+                    <td>3 títulos</td>
+                    <td>1971, 1980 e 1988</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>Brasil</td>
+                    <td>3 títulos</td>
+                    <td>1992, 1993 e 2005</td>
+                </tr>
+                <tr>
+                    <td>Santos</td>
+                    <td>Brasil</td>
+                    <td>3 títulos</td>
+                    <td>1962, 1963 e 2011</td>
+                </tr>
+                <tr>
+                    <td>Grêmio</td>
+                    <td>Brasil</td>
+                    <td>3 títulos</td>
+                    <td>1983, 1995 e 2017</td>
+                </tr>
+                <tr>
+                    <td>Cruzeiro</td>
+                    <td>Brasil</td>
+                    <td>2 títulos</td>
+                    <td>1976 e 1997</td>
+                </tr>
+                <tr>
+                    <td>Atlético Nacional</td>
+                    <td>Colômbia</td>
+                    <td>2 títulos</td>
+                    <td>1989 e 2016</td>
+                </tr>
+                <tr>
+                    <td>Internacional</td>
+                    <td>Brasil</td>
+                    <td>2 títulos</td>
+                    <td>2006 e 2010</td>
+                </tr>
+                <tr>
+                    <td>Colo-Colo</td>
+                    <td>Chile</td>
+                    <td>1 título</td>
+                    <td>1991</td>
+                </tr>
+                <tr>
+                    <td>Atlético Mineiro</td>
+                    <td>Brasil</td>
+                    <td>1 título</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>Fluminense</td>
+                    <td>Brasil</td>
+                    <td>1 título</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Racing</td>
+                    <td>Argentina</td>
+                    <td>1 título</td>
+                    <td>1967</td>
+                </tr>
+                <tr>
+                    <td>Argentinos Juniors</td>
+                    <td>Argentina</td>
+                    <td>1 título</td>
+                    <td>1985</td>
+                </tr>
+                <tr>
+                    <td>Vélez Sarsfield</td>
+                    <td>Argentina</td>
+                    <td>1 título</td>
+                    <td>1994</td>
+                </tr>
+                <tr>
+                    <td>Vasco da Gama</td>
+                    <td>Brasil</td>
+                    <td>1 título</td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                    <td>Once Caldas</td>
+                    <td>Colômbia</td>
+                    <td>1 título</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>LDU Quito</td>
+                    <td>Equador</td>
+                    <td>1 título</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>Corinthians</td>
+                    <td>Brasil</td>
+                    <td>1 título</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>San Lorenzo</td>
+                    <td>Argentina</td>
+                    <td>1 título</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>Botafogo</td>
+                    <td>Brasil</td>
+                    <td>1 título</td>
+                    <td>2024</td>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+</section>
+
+
+
+    <h2 id="estatisticas" class="fw-bold titulo-seccao">Estatísticas</h2>
     
-    <h3 class="card fw-bold">De 2000 a 2010</h3>
-
-    <h3 class="card fw-bold">De 2010 ao 2019</h3>
-
-    <h3 class="card fw-bold">Dominancia dos Clubes brasileiros</h3>
-
-
-    <h2 class="table card fw-bold">Tabela dos campeões</h2>
-    <ul>
-        <li>Independiente - Argentina - 7 títulos (1964, 1965, 1972, 1973, 1974, 1975 e 1984)</li>
-        <li>Boca Juniors - Argentina - 6 títulos (1977, 1978, 2000, 2001, 2003 e 2007)</li>
-        <li>Peñarol	- Uruguai - 5 títulos (1960, 1961, 1966, 1982 e 1987)</li>
-        <li>River Plate	- Argentina - 4 títulos (1986, 1996, 2015 e 2018)</li>
-        <li>Estudiantes	- Argentina - 4 títulos (1968, 1969, 1970 e 2009)</li>
-        <li>Flamengo - Brasil - 4 títulos (1981, 2019, 2022 e 2025)</li>
-        <li>Olimpia	- Paraguai - 3 títulos (1979, 1990 e 2002)</li>
-        <li>Palmeiras - Brasil - 3 títulos (1999, 2020 e 2021)</li>
-        <li>Nacional - Uruguai - 3 títulos (1971, 1980 e 1988)</li>
-        <li>São Paulo - Brasil - 3 títulos (1992, 1993 e 2005)</li>
-        <li>Santos - Brasil - 3 títulos (1962, 1963 e 2011)</li>
-        <li>Grêmio - Brasil - 3 títulos (1983, 1995 e 2017)</li>
-        <li>Cruzeiro - Brasil - 2 títulos (1976 e 1997)</li>
-        <li>Atlético Nacional - Colômbia - 2 títulos (1989 e 2016)</li>
-        <li>Internacional - Brasil - 2 títulos (2006 e 2010)</li>
-        <li>Colo-Colo - Chile - 1 título (1991)</li>
-        <li>Atlético Mineiro - Brasil - 1 título (2013)</li>
-        <li>Fluminense - Brasil - 1 título (2023)</li>
-        <li>Racing - Argentina - 1 título (1967)</li>
-        <li>Argentinos Juniors - Argentina - 1 título (1985)</li>
-        <li>Vélez Sarsfield - Argentina - 1 título (1994)</li>
-        <li>Vasco da Gama - Brasil - 1 título (1998)</li>
-        <li>Once Caldas - Colômbia - 1 título (2004)</li>
-        <li>LDU Quito - Equador - 1 título (2008)</li>
-        <li>Corinthians - Brasil - 1 título (2012)</li>
-        <li>San Lorenzo - Argentina - 1 título (2014)</li>
-        <li>Botafogo - Brasil - 1 título (2024)</li>
-    </ul>
-
-    <h2 class="card fw-bold">Estatisticas</h2>
-    
-    <h3 class="card fw-bold">Artileiros</h3>
+    <h3 class="card fw-bold">Artilheiros</h3>
     <ol>
-        <li>Equatoriano Alberto Spencer	de 1960 a 70 - Peñarol do Uruguai  e de 1971 a 72 - Barcelona de Guayaquil Equador: 54 gols marcados no total</li>
-        <li>Uruguaio Fernando Morena	1973 a 86 - Uruguai Peñarol: 37 gols marcados no total</li>
-        <li>Uruguaio Pedro Rocha	de 1963 a 70 - Peñarol do Uruguai, de 1972 a 74 - São Paulo do Brasil e em 1979	- 
-        do Brasil: 36 gols no total</li>
+        <li>Equatoriano Alberto Spencer de 1960 a 1970 - Peñarol, do Uruguai, e de 1971 a 1972 - Barcelona de Guayaquil, do Equador: 54 gols marcados no total</li>
+        <li>Uruguaio Fernando Morena de 1973 a 1986 - Peñarol, do Uruguai: 37 gols marcados no total</li>
+        <li>Uruguaio Pedro Rocha de 1963 a 1970 - Peñarol, do Uruguai, de 1972 a 1974 - São Paulo, do Brasil, e em 1979 - Palmeiras, do Brasil: 36 gols no total</li>
     </ol>
 
-    <h3 class="card fw-bold">Assistencias</h3>
+    <h3 class="card fw-bold">Assistências</h3>
     <ul>
-        <li>Argentino Juan Román Riquelme de 1997 a 2014 - Boca Juniors da Argentina: 26 assistências no total</li>
-        <li>Uruguaio Giorgian de Arrascaeta de 2014 a 2015 - Defensor Sporting do Uruguai, de 2015 a 2018 - Cruzeiro do Brasil e de 2019 a 2026 - Flamengo do Brasil: 23 assistências no total</li>
-        <li>Brasileiro Rony de 2019 a 2020 - Athletico Paranaense do Brasil e de 2020 a 2026 - Palmeiras do Brasil: 20 assistências no total</li>
-        <li>Brasileiro Bruno Henrique de 2017 a 2018 - Santos do Brasil e de 2019 a 2026 - Flamengo do Brasil: 20 assistências no total</li>
-        <li>Uruguaio Alejandro Silva de 2012 a 2013 - Olimpia do Paraguai, de 2014 a 2015 - Lanús da Argentina e de 2019 a 2024 - Libertad e Olimpia do Paraguai: 18 assistências no total</li>
-        <li>Brasileiro Marcelinho Carioca de 1991 a 1993 - Flamengo do Brasil, de 1996 a 2000 - Corinthians do Brasil e em 2001 - Vasco da Gama do Brasil: 17 assistências no total</li>
-        <li>Brasileiro Éverton Ribeiro de 2013 a 2014 - Cruzeiro do Brasil, de 2017 a 2023 - Flamengo do Brasil e em 2026 - Bahia do Brasil: 15 assistências no total</li>
+        <li>Argentino Juan Román Riquelme de 1997 a 2014 - Boca Juniors, da Argentina: 26 assistências no total</li>
+        <li>Uruguaio Giorgian de Arrascaeta de 2014 a 2015 - Defensor Sporting, do Uruguai, de 2015 a 2018 - Cruzeiro, do Brasil, e de 2019 a 2026 - Flamengo, do Brasil: 23 assistências no total</li>
+        <li>Brasileiro Rony de 2019 a 2020 - Athletico Paranaense, do Brasil, e de 2020 a 2026 - Palmeiras, do Brasil: 20 assistências no total</li>
+        <li>Brasileiro Bruno Henrique de 2017 a 2018 - Santos, do Brasil, e de 2019 a 2026 - Flamengo, do Brasil: 20 assistências no total</li>
+        <li>Uruguaio Alejandro Silva de 2012 a 2013 - Olimpia, do Paraguai, de 2014 a 2015 - Lanús, da Argentina, e de 2019 a 2024 - Libertad e Olimpia, do Paraguai: 18 assistências no total</li>
+        <li>Brasileiro Marcelinho Carioca de 1991 a 1993 - Flamengo, do Brasil, de 1996 a 2000 - Corinthians, do Brasil, e em 2001 - Vasco da Gama, do Brasil: 17 assistências no total</li>
+        <li>Brasileiro Éverton Ribeiro de 2013 a 2014 - Cruzeiro, do Brasil, de 2017 a 2023 - Flamengo, do Brasil, e em 2026 - Bahia, do Brasil: 15 assistências no total</li>
     </ul>
-    <h3 class="card fw-bold">Maiores goleadas</h3>
+    <h3 class="card fw-bold">Maiores Goleadas</h3>
     <ul>
-        <li>1° Peñarol do Uruguai 11 x 2 Venezuela Valencia - Estádio Centenario</li>
-        <li>2° River Plate Argentina 9 x 0 Peru Universitario - Estádio Monumental de Núñez</li>
-        <li>2° Peñarol do Uruguai 9 x 0 Bolívia The Strongest - Estádio Centenario</li>
-        <li>3° Santos Brasil 9 x 1 Paraguai Cerro Porteño - Estádio Vila Belmiro</li>
-        <li>3° Peñarol do Uruguai 9 x 1 Equador Everest - Estádio Centenario</li>
+        <li>1º Peñarol (Uruguai) 11 x 2 Valencia (Venezuela) - Estádio Centenario</li>
+        <li>2º River Plate (Argentina) 9 x 0 Universitario (Peru) - Estádio Monumental de Núñez</li>
+        <li>2º Peñarol (Uruguai) 9 x 0 The Strongest (Bolívia) - Estádio Centenario</li>
+        <li>3º Santos (Brasil) 9 x 1 Cerro Porteño (Paraguai) - Estádio Vila Belmiro</li>
+        <li>3º Peñarol (Uruguai) 9 x 1 Everest (Equador) - Estádio Centenario</li>
+    </ul>
+
+    <h3 class="card fw-bold">Surpresas das Últimas Edições (de 2020 a 2026)</h3>
+    <ul>
+        <li><strong>2026 - Estudiantes de La Plata: </strong>Após anos fora das 
+            decisões, retornou à final da Libertadores de 2026 eliminando o Corinthians nas quartas e o então campeão Flamengo nos pênaltis em pleno Maracanã na semifinal.</li>
+        <li><strong>2025 - Alianza Lima e Central Córdoba: </strong>O Alianza Lima eliminou o Boca Juniors nos pênaltis em La Bombonera na fase prévia, enquanto o estreante Central 
+            Córdoba venceu o Flamengo no Maracanã na fase de grupos.</li>
+        <li><strong>2024 - Botafogo: </strong>Conquistou seu primeiro título de forma inédita vencendo o
+        Atlético Mineiro na final.</li>
+        <li><strong>2023 - Fluminense: </strong>Conquistou um título inédito vencendo por 2 a 1
+        o Boca Juniors na final.</li>
+        <li><strong>2022 - Athletico Paranaense: </strong>Chegou à final, perdendo por apenas 1 a 0 para o Flamengo.</li>
+        <li><strong>2021 - Barcelona de Guayaquil: </strong>Chegou à semifinal da Libertadores eliminando o Fluminense 
+        nas quartas.</li>
+        <li><strong>2020 - Santos: </strong>Mesmo começando a competição em uma crise financeira, goleou por 3 a 0 o Boca
+        Juniors na semifinal, perdendo apenas para o Palmeiras na decisão.</li>
     </ul>
 
 
 
+
+</main>
+
+
+<a href="#" id="btn-topo" class="btn btn-warning fw-bold shadow" title="Voltar ao início">Voltar</a></a>
+
+<footer class="text-center py-4">
+    <div class="container">
+        <p class="mb-1 f-bold">Copa Libertadores da América - Histórico Commenbol Libertadores da América</p>
+        <p class="mb=0">Desenvolvido pelo aluno: Fernando Siqueira Genta Maragni - Versão 2.0</p>
+    </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
